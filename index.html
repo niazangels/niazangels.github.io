@@ -31,6 +31,9 @@
 	<link rel='stylesheet' href='assets/css/split.css' type='text/css' media='screen' />
 	<meta name="viewport" content="width=device-width,initial-scale=1" />
 
+	<!-- Scripts -->
+	<script src="./assets/js/siriwave.js"></script>
+
 </head>
 
 <body id="fullsingle" class="page-template-page-fullsingle-split">
@@ -58,10 +61,15 @@
 
 			<div class="split-bio">
 				
-				<p>I am Niyas Mohammed.
-				I wake up everyday to build products that will enhance the quality of our lives. You can read some of my better posts on <a href="https://medium.com/@niazangels">Medium</a> and code on <a href="https://github.com/niazangels">Github</a>.</p>
+				<p>I am Niyas Mohammed.</p>
+				<p>I <span class="color-red">&#10084;</span> designing intelligent things.</p>
+				<!-- <br> -->
+				<!-- <p>You can read some of my better posts on <a href="https://medium.com/@niazangels">Medium</a> and code on <a href="https://github.com/niazangels">Github</a>.</p> -->
 
 			</div>
+			
+			<div id="siri-container"></div>
+
 
 			<div class="split-lists">
 				
@@ -92,6 +100,8 @@
 
 			<div class="split-credit">
 
+				<!-- <div id="siri-container"></div> -->
+
 				<p>&copy;2017 <a href="#">Niyas Mohammed</a> - <a href="https://onepagelove.com/split">Split Template</a> by <a href="https://onepagelove.com">One Page Love</a></p>
 
 			</div>		
@@ -106,4 +116,21 @@
 	var greetings = ['Hello', 'Hola', 'Bonjour', 'Salut', 'നമസ്കാരം', 'नमस्ते', 'Kon\'nichiwa'];
 	var greeting = greetings[Math.floor(Math.random()*greetings.length)];
 	document.getElementById('greeting').innerHTML = greeting + ' !'
+</script>
+
+<script>
+var siriwave_width = 320 
+var siriWave = new SiriWave({
+	container: document.getElementById('siri-container'),
+	width: siriwave_width,
+	height: siriwave_width/2.6,
+	color: '#ededed',
+	speed: 0.004,
+	frequency: 4,
+	style:'default'
+	/*
+	*/
+});
+
+siriWave.start()
 </script>

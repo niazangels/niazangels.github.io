@@ -130,7 +130,7 @@ body.page-template-page-fullsingle-split {
   .fs-split .split-image {
     width: 50%;
     height: 100vh;
-    background-image: url("../../images/green.jpg");
+    background-image: url("../../images/niyas.jpg");
     background-position: center center;
     background-size: cover; }
     @media (max-width: 800px) {
@@ -183,6 +183,9 @@ body.page-template-page-fullsingle-split {
   .split-intro .tagline {
     color: #505050;
     }
+.color-red{
+    color: #DB504A;
+}
 
 .split-bio {
   padding: 40px 0 40px 0;
